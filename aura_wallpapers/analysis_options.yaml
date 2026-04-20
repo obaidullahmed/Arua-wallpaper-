@@ -1,0 +1,11 @@
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+linter:
+  rules:
+    avoid_print: true
+    avoid_single_cascade_in_expression_statements: true
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
