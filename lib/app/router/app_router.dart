@@ -18,30 +18,41 @@ class AppRouter {
   static const String settings = '/settings';
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
-    switch (settings.name) {
-      case home:
-        return MaterialPageRoute(builder: (_) => const HomeScreen());
-      case category:
-        final args = settings.arguments as Map<String, dynamic>?;
-        return MaterialPageRoute(
-          builder: (_) => CategoryScreen(category: args?['category'] as WallpaperCategory?),
-        );
-      case detail:
-        final args = settings.arguments as Map<String, dynamic>?;
-        return MaterialPageRoute(
-          builder: (_) => WallpaperDetailScreen(wallpaperId: args?['wallpaperId'] as String),
-        );
-      case preview:
-        final args = settings.arguments as Map<String, dynamic>?;
-        return MaterialPageRoute(
-          builder: (_) => WallpaperPreviewScreen(wallpaperId: args?['wallpaperId'] as String),
-        );
-      case favorites:
-        return MaterialPageRoute(builder: (_) => const FavoritesScreen());
-      case settings:
-        return MaterialPageRoute(builder: (_) => const SettingsScreen());
-      default:
-        return MaterialPageRoute(builder: (_) => const HomeScreen());
+    final routeName = settings.name;
+
+    if (routeName == home) {
+      return MaterialPageRoute(builder: (_) => const HomeScreen());
     }
+
+    if (routeName == category) {
+      final args = settings.arguments as Map<String, dynamic>?;
+      return MaterialPageRoute(
+        builder: (_) => CategoryScreen(category: args?['category'] as WallpaperCategory?),
+      );
+    }
+
+    if (routeName == detail) {
+      final args = settings.arguments as Map<String, dynamic>?;
+      return MaterialPageRoute(
+        builder: (_) => WallpaperDetailScreen(wallpaperId: args?['wallpaperId'] as String),
+      );
+    }
+
+    if (routeName == preview) {
+      final args = settings.arguments as Map<String, dynamic>?;
+      return MaterialPageRoute(
+        builder: (_) => WallpaperPreviewScreen(wallpaperId: args?['wallpaperId'] as String),
+      );
+    }
+
+    if (routeName == favorites) {
+      return MaterialPageRoute(builder: (_) => const FavoritesScreen());
+    }
+
+    if (routeName == settings) {
+      return MaterialPageRoute(builder: (_) => const SettingsScreen());
+    }
+
+    return MaterialPageRoute(builder: (_) => const HomeScreen());
   }
 }

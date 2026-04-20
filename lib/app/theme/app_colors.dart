@@ -7,6 +7,7 @@ class AppColors {
   static const Color lightBackground = Color(0xFFF5F7FB);
   static const Color card = Color(0xFF131E2B);
   static const Color surface = Color(0xFF1F2A3B);
+  static const Color inputBackground = Color(0xFF1E293B);
   static const Color elevation = Color(0xFF161F2F);
   static const Color primary = Color(0xFF6C5CE7);
   static const Color accent = Color(0xFF00D8FF);
