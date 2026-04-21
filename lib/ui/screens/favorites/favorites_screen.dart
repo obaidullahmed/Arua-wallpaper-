@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/router/app_router.dart';
-import '../../../app/theme/app_text_styles.dart';
 import '../../../providers/favorites_provider.dart';
 import '../../../providers/wallpaper_provider.dart';
 import '../../widgets/wallpaper_card.dart';

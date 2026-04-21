@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../data/models/wallpaper_model.dart';
+import '../../core/enums/wallpaper_category.dart';
 import '../../app/theme/app_text_styles.dart';
 import 'premium_badge.dart';
 

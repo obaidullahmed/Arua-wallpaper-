@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:video_player/video_player.dart';
 import '../../../app/theme/app_text_styles.dart';
+import '../../../core/enums/wallpaper_category.dart';
 import '../../../data/models/wallpaper_model.dart';
-import '../../../providers/favorites_provider.dart';
 import '../../../providers/wallpaper_provider.dart';
-import '../../../services/wallpaper_channel_service.dart';
 import '../../widgets/gradient_button.dart';
 
 class WallpaperPreviewScreen extends ConsumerStatefulWidget {

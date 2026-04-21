@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/router/app_router.dart';
 import '../../../core/enums/wallpaper_category.dart';
-import '../../../app/theme/app_text_styles.dart';
 import '../../../providers/wallpaper_provider.dart';
 import '../../widgets/section_header.dart';
 import '../../widgets/wallpaper_card.dart';

@@ -1,6 +1,5 @@
 import 'package:flutter/services.dart';
 import '../core/constants/app_constants.dart';
-import '../core/enums/wallpaper_type.dart';
 import '../data/models/wallpaper_model.dart';
 
 class WallpaperChannelService {
